@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ RealWear Development Software, Source Code and Object Code.
+  ~ (c) RealWear, Inc. All rights reserved.
+  ~
+  ~ Contact info@realwear.com for further information about the use of this code.
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/realwearTheme_backgroundColor"
+    tools:context=".buttonsexample.CommandButtonExampleActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:rowCount="6"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.realwear.ux.view.CommandButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_style" />
+
+        <com.realwear.ux.view.CommandButton
+            style="@style/ContainedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contained_button" />
+
+        <com.realwear.ux.view.CommandButton
+            style="@style/ContainedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/contained_button_disabled" />
+
+        <com.realwear.ux.view.CommandButton
+            style="@style/TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_button" />
+
+        <com.realwear.ux.view.CommandButton
+            android:id="@+id/selected_text_button"
+            style="@style/TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_button_selected" />
+
+        <com.realwear.ux.view.CommandButton
+            style="@style/LargeTextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/large_text_button" />
+
+        <com.realwear.ux.view.CommandButton
+            style="@style/SmallTextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/small_text_button" />
+
+        <com.realwear.ux.view.CommandButton
+            style="@style/WearMlIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wearml_indicator" />
+
+        <com.realwear.ux.view.CommandButton
+            style="@style/RedContainedButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_style" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

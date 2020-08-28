@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ RealWear Development Software, Source Code and Object Code.
+  ~ (c) RealWear, Inc. All rights reserved.
+  ~
+  ~ Contact info@realwear.com for further information about the use of this code.
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/realwearTheme_backgroundColor"
+    tools:context=".textviewexample.StyledTextViewExampleActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:rowCount="6"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/H1_TextView"
+            android:text="@string/h1_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/H2_TextView"
+            android:text="@string/h2_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/H3_TextView"
+            android:text="@string/h3_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/H4_TextView"
+            android:text="@string/h4_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/H5_TextView"
+            android:text="@string/h5_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/H6_TextView"
+            android:text="@string/h6_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Subtitle1_TextView"
+            android:text="@string/subtitle_1_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Subtitle2_TextView"
+            android:text="@string/subtitle_2_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Body1_TextView"
+            android:text="@string/body_1_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Body2_TextView"
+            android:text="@string/body_2_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CaptionTextView"
+            android:text="@string/caption_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OverlineTextView"
+            android:text="@string/overline_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OverlayTextView"
+            android:text="@string/overlay_style" />
+
+        <com.realwear.ux.view.StyledTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_style" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ RealWear Development Software, Source Code and Object Code.
+  ~ (c) RealWear, Inc. All rights reserved.
+  ~
+  ~ Contact info@realwear.com for further information about the use of this code.
+  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected State -->
+    <item android:color="@android:color/holo_orange_light" android:state_selected="true" />
+    <!-- Checked State -->
+    <item android:color="@android:color/holo_orange_light" android:state_checked="true" />
+    <!-- Default State -->
+    <item android:color="@android:color/holo_red_light" />
+</selector>

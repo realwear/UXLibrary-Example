@@ -1,0 +1,27 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="RealWearTheme" />
+
+    <!-- Example custom ContainedButton style with red background. -->
+    <style name="RedContainedButtonStyle" parent="ContainedButton">
+        <item name="android:backgroundTint">@android:color/holo_red_light</item>
+    </style>
+
+    <!-- Example custom LevelControl style. -->
+    <style name="CustomLevelControlStyle" parent="LevelControl">
+        <item name="android:backgroundTint">@color/custom_background_tint</item>
+        <item name="android:textColor">@color/custom_text_color</item>
+    </style>
+
+    <!-- Example custom RoundRadioButton style. -->
+    <style name="CustomRoundRadioButtonStyle" parent="RoundRadioButton">
+        <item name="android:backgroundTint">@color/custom_background_tint</item>
+        <item name="android:textColor">@color/custom_text_color</item>
+    </style>
+
+    <!-- Example custom ContinuousRadioButton style. -->
+    <style name="CustomContinuousRadioButtonStyle" parent="ContinuousRadioButton">
+        <item name="android:backgroundTint">@color/custom_background_tint</item>
+        <item name="android:textColor">@color/custom_text_color</item>
+    </style>
+</resources>

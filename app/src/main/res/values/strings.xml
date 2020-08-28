@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">UXLibrary Example</string>
+    <string name="title_horizontal_selector">Horizontal Selector</string>
+    <string name="title_more_options">More Options</string>
+
+    <string name="title_buttons">Command Button</string>
+    <string name="default_style">Default Style</string>
+    <string name="contained_button">Contained Button</string>
+    <string name="contained_button_disabled">Contained Button (Disabled)</string>
+    <string name="text_button">Text Button</string>
+    <string name="large_text_button">Large Text Button</string>
+    <string name="small_text_button">Small Text Button</string>
+    <string name="custom_style">Custom Style</string>
+    <string name="wearml_indicator">WearML Indicator</string>
+
+    <string name="activity_title_level_control">Level Control</string>
+    <string name="level_control_xml_positive_command">XML Level %d</string>
+    <string name="level_control_xml_negative_command">XML Level Minus %d</string>
+    <string name="level_control_xml_zero_command">XML Level %d</string>
+    <string name="level_control_xml_title">XML Level</string>
+    <string name="level_control_code_positive_command">Code Level %d</string>
+    <string name="level_control_code_negative_command">Code Level Minus %d</string>
+    <string name="level_control_code_zero_command">Code Level %d</string>
+    <string name="level_control_code_title">Code Level</string>
+    <string name="level_control_styled_positive_command">Styled Level %d</string>
+    <string name="level_control_styled_negative_command">Styled Level Minus %d</string>
+    <string name="level_control_styled_zero_command">Styled Level %d</string>
+    <string name="level_control_styled_title">Styled Level</string>
+
+    <string name="title_textview">Styled TextView</string>
+    <string name="h1_style">H1 Style</string>
+    <string name="h2_style">H2 Style</string>
+    <string name="h3_style">H3 Style</string>
+    <string name="h4_style">H4 Style</string>
+    <string name="h5_style">H5 Style</string>
+    <string name="h6_style">H6 Style</string>
+    <string name="subtitle_1_style">Subtitle 1 Style</string>
+    <string name="subtitle_2_style">Subtitle 2 Style</string>
+    <string name="body_1_style">Body 1 Style</string>
+    <string name="body_2_style">Body 2 Style</string>
+    <string name="caption_style">Caption Style</string>
+    <string name="overline_style">Overline Style</string>
+    <string name="overlay_style">Overlay Style</string>
+    <string name="text_button_selected">Text Button (Selected)</string>
+    <string name="get_focused_index">Get Focused Index</string>
+    <string name="select_list_item_5">Select List Item 5</string>
+    <string name="deselect_item">Deselect Item</string>
+    <string name="remove_border">Remove Border</string>
+    <string name="insert_border">Insert Border</string>
+    <string name="option_1">Option 1</string>
+    <string name="open_programmatically">Open Programmatically</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+
+    <string name="title_radio_group">Radio Group</string>
+    <string name="radio_group_xml_continuous_button_1">XML Button 1</string>
+    <string name="radio_group_xml_continuous_button_2">XML Button 2</string>
+    <string name="radio_group_xml_continuous_button_3">XML Button 3</string>
+    <string name="radio_group_java_continuous_button_1">Java Button 1</string>
+    <string name="radio_group_java_continuous_button_2">Java Button 2</string>
+    <string name="radio_group_java_continuous_button_3">Java Button 3</string>
+    <string name="radio_group_styled_continuous_button_1">Styled Button 1</string>
+    <string name="radio_group_styled_continuous_button_2">Styled Button 2</string>
+    <string name="radio_group_styled_continuous_button_3">Styled Button 3</string>
+    <string name="radio_group_xml_round_button_1">1</string>
+    <string name="radio_group_xml_round_button_2">2</string>
+    <string name="radio_group_xml_round_button_3">3</string>
+    <string name="radio_group_java_round_button_1">4</string>
+    <string name="radio_group_java_round_button_2">5</string>
+    <string name="radio_group_java_round_button_3">6</string>
+    <string name="radio_group_styled_round_button_1">7</string>
+    <string name="radio_group_styled_round_button_2">8</string>
+    <string name="radio_group_styled_round_button_3">9</string>
+    <string name="radio_group_volume_title">Set Volume</string>
+    <string name="radio_group_volume_1">1</string>
+    <string name="radio_group_volume_set_volume_1">Set Volume 1</string>
+    <string name="radio_group_volume_2">2</string>
+    <string name="radio_group_volume_set_volume_2">Set Volume 2</string>
+
+    <string name="color_level_fragment_text">%1$s Level</string>
+    <string name="color_option_fragment_text_1">%1$s Option 1</string>
+    <string name="color_option_fragment_text_2">%1$s Option 2</string>
+</resources>

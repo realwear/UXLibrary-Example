@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ RealWear Development Software, Source Code and Object Code.
+  ~ (c) RealWear, Inc. All rights reserved.
+  ~
+  ~ Contact info@realwear.com for further information about the use of this code.
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/realwearTheme_backgroundColor">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.realwear.ux.view.CommandButton
+            android:id="@+id/buttons_example_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="commandButtonExampleClick"
+            android:text="@string/title_buttons" />
+
+        <com.realwear.ux.view.CommandButton
+            android:id="@+id/level_control_example_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="levelControlExampleClick"
+            android:text="@string/activity_title_level_control" />
+
+        <com.realwear.ux.view.CommandButton
+            android:id="@+id/horizontal_selector_example_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="horizontalSelectorExampleClick"
+            android:text="@string/title_horizontal_selector" />
+
+        <com.realwear.ux.view.CommandButton
+            android:id="@+id/more_options_example_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="moreOptionsExampleClick"
+            android:text="@string/title_more_options" />
+
+        <com.realwear.ux.view.CommandButton
+            android:id="@+id/text_view_example_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="styledTextViewExampleClick"
+            android:text="@string/title_textview" />
+
+        <com.realwear.ux.view.CommandButton
+            android:id="@+id/radio_group_example_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="radioGroupExampleClick"
+            android:text="@string/title_radio_group" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

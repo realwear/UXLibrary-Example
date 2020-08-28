@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ RealWear Development Software, Source Code and Object Code.
+  ~ (c) RealWear, Inc. All rights reserved.
+  ~
+  ~ Contact info@realwear.com for further information about the use of this code.
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/realwearTheme_backgroundColor"
+    tools:context=".radiogroupexample.RadioGroupExampleActivity">
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/vertical_divider_12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Radio groups with continuous radio buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/vertical_divider_12dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Default radio group with radio buttons added using XML. -->
+            <com.realwear.ux.viewgroup.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.realwear.ux.view.ContinuousRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_xml_continuous_button_1"
+                    app:voice_command="@string/radio_group_xml_continuous_button_1" />
+
+                <com.realwear.ux.view.ContinuousRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_xml_continuous_button_2"
+                    app:voice_command="@string/radio_group_xml_continuous_button_2" />
+
+                <com.realwear.ux.view.ContinuousRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_xml_continuous_button_3"
+                    app:voice_command="@string/radio_group_xml_continuous_button_3" />
+            </com.realwear.ux.viewgroup.RadioGroup>
+
+            <!-- Default radio group with radio buttons added using Java. -->
+            <com.realwear.ux.viewgroup.RadioGroup
+                android:id="@+id/continuous_radio_group_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Styled radio group. -->
+            <com.realwear.ux.viewgroup.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/CustomContinuousRadioButtonStyle">
+
+                <com.realwear.ux.view.ContinuousRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_styled_continuous_button_1"
+                    app:voice_command="@string/radio_group_styled_continuous_button_1" />
+
+                <com.realwear.ux.view.ContinuousRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_styled_continuous_button_2"
+                    app:voice_command="@string/radio_group_styled_continuous_button_2" />
+
+                <com.realwear.ux.view.ContinuousRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_styled_continuous_button_3"
+                    app:voice_command="@string/radio_group_styled_continuous_button_3" />
+            </com.realwear.ux.viewgroup.RadioGroup>
+
+        </LinearLayout>
+
+        <!-- Radio groups with round radio buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/vertical_divider_12dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Default radio group with radio buttons added using XML. -->
+            <com.realwear.ux.viewgroup.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.realwear.ux.view.RoundRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_xml_round_button_1"
+                    app:voice_command="@string/radio_group_xml_round_button_1" />
+
+                <com.realwear.ux.view.RoundRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_xml_round_button_2"
+                    app:voice_command="@string/radio_group_xml_round_button_2" />
+
+                <com.realwear.ux.view.RoundRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_xml_round_button_3"
+                    app:voice_command="@string/radio_group_xml_round_button_3" />
+            </com.realwear.ux.viewgroup.RadioGroup>
+
+            <!-- Default radio group with radio buttons added using Java. -->
+            <com.realwear.ux.viewgroup.RadioGroup
+                android:id="@+id/round_radio_group_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Styled radio group. -->
+            <com.realwear.ux.viewgroup.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/CustomRoundRadioButtonStyle">
+
+                <com.realwear.ux.view.RoundRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_styled_round_button_1"
+                    app:voice_command="@string/radio_group_styled_round_button_1" />
+
+                <com.realwear.ux.view.RoundRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_styled_round_button_2"
+                    app:voice_command="@string/radio_group_styled_round_button_2" />
+
+                <com.realwear.ux.view.RoundRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/radio_group_styled_round_button_3"
+                    app:voice_command="@string/radio_group_styled_round_button_3" />
+            </com.realwear.ux.viewgroup.RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Radio buttons with a title. -->
+    <com.realwear.ux.viewgroup.RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_container">
+
+        <com.realwear.ux.view.ContinuousRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_group_volume_title"
+            app:title_only="true" />
+
+        <com.realwear.ux.view.ContinuousRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/radio_group_volume_1"
+            app:voice_command="@string/radio_group_volume_set_volume_1" />
+
+        <com.realwear.ux.view.ContinuousRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/radio_group_volume_2"
+            app:voice_command="@string/radio_group_volume_set_volume_2" />
+    </com.realwear.ux.viewgroup.RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
