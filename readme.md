@@ -42,12 +42,12 @@ dependencies {
 
 The RealWear UX Library comprises of 6 main components:
 
-* [[Command Button|command-button]]
-* [[Styled Text View|Styled-Text-View]]
-* [[Level Control|Level-Control]]
-* [[Horizontal Selector|Horizontal-Selector]]
-* [[More Options|More-Options]]
-* [[Radio Group|Radio-Group]]
+* Command Button
+* Styled Text View
+* Level Control
+* Horizontal Selector
+* More Options
+* Radio Group
 
 # More information
 
