@@ -22,7 +22,7 @@ import java.lang.ref.WeakReference
  * Example showing the More Options widget.
  */
 class MoreOptionsExampleActivity : AppCompatActivity(), View.OnClickListener {
-    private val moreOptionsHandler = MoreOptionsHandler(WeakReference<MoreOptionsExampleActivity>(this))
+    private val moreOptionsHandler = MoreOptionsHandler(WeakReference(this))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,9 +31,10 @@ class MoreOptionsExampleActivity : AppCompatActivity(), View.OnClickListener {
         // Button used to show that we can't interact with the underlying view when More Options is displayed
         option1Button.setOnClickListener(this)
         val contentForMoreOptions = layoutInflater.inflate(
-                R.layout.more_options_content,
-                findViewById(android.R.id.content),
-                false)
+            R.layout.more_options_content,
+            findViewById(android.R.id.content),
+            false
+        )
 
         // Button from the layout that we add to the More Options widget
         contentForMoreOptions.option2Button.setOnClickListener(this)
@@ -64,7 +65,8 @@ class MoreOptionsExampleActivity : AppCompatActivity(), View.OnClickListener {
     /**
      * Handler to manage hiding the More Options tray.
      */
-    class MoreOptionsHandler(private val outerClass: WeakReference<MoreOptionsExampleActivity>) : Handler() {
+    class MoreOptionsHandler(private val outerClass: WeakReference<MoreOptionsExampleActivity>) :
+        Handler() {
         override fun handleMessage(msg: Message) {
             outerClass.get()?.moreOptionsWidget?.hideMoreOptions()
         }
