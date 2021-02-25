@@ -66,5 +66,13 @@
             android:layout_marginTop="16dp"
             android:onClick="radioGroupExampleClick"
             android:text="@string/title_radio_group" />
+
+        <com.realwear.ux.view.CommandButton
+            android:id="@+id/action_bar_example_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="commandBarClick"
+            android:text="@string/command_bar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

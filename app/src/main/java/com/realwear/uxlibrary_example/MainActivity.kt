@@ -11,6 +11,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.realwear.uxlibrary_example.buttonsexample.CommandButtonExampleActivity
+import com.realwear.uxlibrary_example.commandbarexample.CommandBarExampleActivity
 import com.realwear.uxlibrary_example.horizontalselectorexample.HorizontalSelectorExampleActivity
 import com.realwear.uxlibrary_example.levelcontrolexample.LevelControlExampleActivity
 import com.realwear.uxlibrary_example.moreoptionsexample.MoreOptionsExampleActivity
@@ -66,6 +67,13 @@ class MainActivity : AppCompatActivity() {
      */
     fun radioGroupExampleClick(v: View) {
         startActivity(Intent(v.context, RadioGroupExampleActivity::class.java))
+    }
+
+    /**
+     * Launch activity for command bar example.
+     */
+    fun commandBarClick(v: View) {
+        startActivity(Intent(v.context, CommandBarExampleActivity::class.java))
     }
 
     companion object {

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ RealWear Development Software, Source Code and Object Code.
+  ~ (c) RealWear, Inc. All rights reserved.
+  ~
+  ~ Contact info@realwear.com for further information about the use of this code.
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".commandbarexample.CommandBarExampleActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_5dp_height"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.realwear.ux.viewgroup.CommandBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.realwear.ux.view.CommandButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addButton"
+                android:text="@string/attach_button" />
+
+            <com.realwear.ux.view.CommandButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="removeButton"
+                android:text="@string/remove_button" />
+
+            <com.realwear.ux.view.CommandButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addInvalidView"
+                android:text="@string/attach_invalid_view" />
+        </com.realwear.ux.viewgroup.CommandBar>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
