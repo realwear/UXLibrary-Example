@@ -36,6 +36,9 @@
         <activity
             android:name=".radiogroupexample.RadioGroupExampleActivity"
             android:label="@string/title_radio_group" />
+        <activity
+            android:name=".commandbarexample.CommandBarExampleActivity"
+            android:label="@string/command_bar" />
     </application>
 
 </manifest>
