@@ -80,10 +80,12 @@
     <string name="color_level_fragment_text">%1$s Level</string>
     <string name="color_option_fragment_text_1">%1$s Option 1</string>
     <string name="color_option_fragment_text_2">%1$s Option 2</string>
-
     <string name="command_bar">Command Bar</string>
     <string name="button_template">Button %d</string>
+    <string name="button_1">Button 1</string>
     <string name="attach_invalid_view">Attach Invalid View</string>
     <string name="remove_button">Remove Button</string>
     <string name="attach_button">Attach Button</string>
+    <string name="fragment_example_button">Fragment Example</string>
+    <string name="activity_example_button">Activity Example</string>
 </resources>
