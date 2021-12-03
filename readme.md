@@ -24,7 +24,7 @@ Then add the UX Library dependency to your application build.gradle.
 ```
 dependencies {
   ...
-  implementation 'com.realwear:UXLibrary:v1.1.1.260'
+  implementation 'com.realwear:UXLibrary:v1.3.1.412'
 }
 ```
 
@@ -33,7 +33,7 @@ dependencies {
 ```
 dependencies {
   ...
-  implementation 'com.realwear:UXLibrary:v1.1.1.260'
+  implementation 'com.realwear:UXLibrary:v1.3.1.412'
   implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }
 ```
