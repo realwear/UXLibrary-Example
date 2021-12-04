@@ -1,6 +1,6 @@
 # What is the UX Library?
 
-The UX Library is a set of styled components that have been designed specifically for app development on the HMT-1 and HMT-1Z1 platforms. The components are based on common Android components and adhere to Android standard practices, while also providing additional functionality to address the most common challenges encountered when developing for RealWear devices, namely speech enablement, head tracking, and theming.
+The UX Library is a set of styled components that have been designed specifically for app development on RealWear devices. The components are based on common Android components and adhere to Android standard practices, while also providing additional functionality to address the most common challenges encountered when developing for RealWear devices, namely speech enablement, head tracking, and theming.
 
 This repository contains examples on how to use each component of the UX Library.
 
