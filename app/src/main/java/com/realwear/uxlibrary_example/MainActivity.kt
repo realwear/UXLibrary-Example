@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.realwear.uxlibrary_example.buttonsexample.CommandButtonExampleActivity
 import com.realwear.uxlibrary_example.commandbarexample.CommandBarExampleActivity
 import com.realwear.uxlibrary_example.horizontalselectorexample.HorizontalSelectorExampleActivity
+import com.realwear.uxlibrary_example.horizontalselectorexample.HorizontalSelectorOptionActivity
 import com.realwear.uxlibrary_example.levelcontrolexample.LevelControlExampleActivity
 import com.realwear.uxlibrary_example.moreoptionsexample.MoreOptionsExampleActivity
 import com.realwear.uxlibrary_example.radiogroupexample.RadioGroupExampleActivity
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity() {
      * Launch activity for horizontal selector example.
      */
     fun horizontalSelectorExampleClick(v: View) {
-        startActivity(Intent(v.context, HorizontalSelectorExampleActivity::class.java))
+        startActivity(Intent(v.context, HorizontalSelectorOptionActivity::class.java))
     }
 
     /**

@@ -25,6 +25,12 @@
             android:name=".levelcontrolexample.LevelControlExampleActivity"
             android:label="@string/activity_title_level_control" />
         <activity
+            android:name=".horizontalselectorexample.HorizontalSelectorOptionActivity"
+            android:label="@string/title_horizontal_selector" />
+        <activity
+            android:name=".horizontalselectorexample.FragmentHorizontalSelectorExample"
+            android:label="@string/title_horizontal_selector" />
+        <activity
             android:name=".horizontalselectorexample.HorizontalSelectorExampleActivity"
             android:label="@string/title_horizontal_selector" />
         <activity
