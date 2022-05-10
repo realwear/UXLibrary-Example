@@ -6,13 +6,51 @@
   -->
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/dialogfragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:contentDescription="hf_no_number">
 
     <com.realwear.ux.viewgroup.HorizontalSelector
         android:id="@+id/horizontal_selector"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <com.realwear.ux.view.CommandButton
+        android:id="@+id/button_focused_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_focused_index"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_select_item_5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.realwear.ux.view.CommandButton
+        android:id="@+id/button_select_item_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_list_item_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_deselect_item"
+        app:layout_constraintStart_toEndOf="@id/button_focused_index" />
+
+    <com.realwear.ux.view.CommandButton
+        android:id="@+id/button_deselect_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deselect_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_center_border_visibility"
+        app:layout_constraintStart_toEndOf="@id/button_select_item_5" />
+
+    <com.realwear.ux.view.CommandButton
+        android:id="@+id/button_center_border_visibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remove_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_deselect_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

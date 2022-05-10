@@ -16,7 +16,7 @@ import com.realwear.uxlibrary_example.R
 /**
  * Activity for selecting the relevant horizontal selector example
  */
-class HorizontalSelectorOptionActivity: AppCompatActivity() {
+class HorizontalSelectorOptionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.horizontal_selector_base_activity)

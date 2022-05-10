@@ -16,31 +16,57 @@ import com.realwear.ux.view.RadioButton
 import com.realwear.ux.view.RoundRadioButton
 import com.realwear.uxlibrary_example.MainActivity
 import com.realwear.uxlibrary_example.R
-import kotlinx.android.synthetic.main.activity_radio_group.*
+import com.realwear.uxlibrary_example.databinding.ActivityRadioGroupBinding
 
 /**
  * Example showing the Radio Group.
  */
 class RadioGroupExampleActivity : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
+    private lateinit var binding: ActivityRadioGroupBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_radio_group)
+        binding = ActivityRadioGroupBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        continuous_radio_group_java.setOnCheckedChangeListener(this)
-        continuous_radio_group_java.addView(createContinuousRadioButton(
-                getString(R.string.radio_group_java_continuous_button_1)))
-        continuous_radio_group_java.addView(createContinuousRadioButton(
-                getString(R.string.radio_group_java_continuous_button_2)))
-        continuous_radio_group_java.addView(createContinuousRadioButton(
-                getString(R.string.radio_group_java_continuous_button_3)))
+        binding.continuousRadioGroupJava.let {
+            it.setOnCheckedChangeListener(this)
+            it.addView(
+                createContinuousRadioButton(
+                    getString(R.string.radio_group_java_continuous_button_1)
+                )
+            )
+            it.addView(
+                createContinuousRadioButton(
+                    getString(R.string.radio_group_java_continuous_button_2)
+                )
+            )
+            it.addView(
+                createContinuousRadioButton(
+                    getString(R.string.radio_group_java_continuous_button_3)
+                )
+            )
+        }
 
-        round_radio_group_java.setOnCheckedChangeListener(this)
-        round_radio_group_java.addView(createRoundRadioButton(
-                getString(R.string.radio_group_java_round_button_1)))
-        round_radio_group_java.addView(createRoundRadioButton(
-                getString(R.string.radio_group_java_round_button_2)))
-        round_radio_group_java.addView(createRoundRadioButton(
-                getString(R.string.radio_group_java_round_button_3)))
+        binding.roundRadioGroupJava.let {
+            it.setOnCheckedChangeListener(this)
+            it.addView(
+                createRoundRadioButton(
+                    getString(R.string.radio_group_java_round_button_1)
+                )
+            )
+            it.addView(
+                createRoundRadioButton(
+                    getString(R.string.radio_group_java_round_button_2)
+                )
+            )
+            it.addView(
+                createRoundRadioButton(
+                    getString(R.string.radio_group_java_round_button_3)
+                )
+            )
+        }
+
     }
 
     /**

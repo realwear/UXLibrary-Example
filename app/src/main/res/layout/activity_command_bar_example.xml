@@ -9,7 +9,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/realwearTheme_backgroundColor"
     tools:context=".commandbarexample.CommandBarExampleActivity">
 
     <LinearLayout
@@ -26,22 +25,33 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.realwear.ux.viewgroup.CommandBar
+            android:id="@+id/parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <com.realwear.ux.view.CommandButton
+                android:id="@+id/attach"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="addButton"
                 android:text="@string/attach_button" />
 
             <com.realwear.ux.view.CommandButton
+                android:id="@+id/remove"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="removeButton"
                 android:text="@string/remove_button" />
 
+            <com.realwear.ux.view.ToggleButton
+                android:id="@+id/toggle_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/test_toggle_on"
+                android:textOn="@string/test_toggle_off" />
+
             <com.realwear.ux.view.CommandButton
+                android:id="@+id/invalid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="addInvalidView"
