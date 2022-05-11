@@ -12,26 +12,31 @@ import androidx.appcompat.app.AppCompatActivity
 import com.realwear.ux.view.LevelControl.OnLevelChangedListener
 import com.realwear.uxlibrary_example.MainActivity
 import com.realwear.uxlibrary_example.R
-import kotlinx.android.synthetic.main.activity_level_control.*
+import com.realwear.uxlibrary_example.databinding.ActivityLevelControlBinding
 
 /**
  * Example showing the Level Control.
  */
 class LevelControlExampleActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityLevelControlBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_level_control)
+        binding = ActivityLevelControlBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        level_control.min = 10
-        level_control.max = 20
-        level_control.value = 15
-        level_control.positiveVoiceCommand = getString(R.string.level_control_code_positive_command)
-        level_control.negativeVoiceCommand = getString(R.string.level_control_code_negative_command)
-        level_control.zeroVoiceCommand = getString(R.string.level_control_code_zero_command)
-        level_control.title = getString(R.string.level_control_code_title)
-        level_control.onLevelChangedListener = object : OnLevelChangedListener {
-            override fun onLevelChanged(newLevel: Int) {
-                Log.i(TAG, "New level: $newLevel")
+        binding.levelControl.let {
+            it.min = 10
+            it.max = 20
+            it.value = 15
+            it.positiveVoiceCommand = getString(R.string.level_control_code_positive_command)
+            it.negativeVoiceCommand = getString(R.string.level_control_code_negative_command)
+            it.zeroVoiceCommand = getString(R.string.level_control_code_zero_command)
+            it.title = getString(R.string.level_control_code_title)
+            it.onLevelChangedListener = object : OnLevelChangedListener {
+                override fun onLevelChanged(newLevel: Int) {
+                    Log.i(TAG, "New level: $newLevel")
+                }
             }
         }
     }
