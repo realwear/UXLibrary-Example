@@ -24,7 +24,7 @@ Then add the UX Library dependency to your application build.gradle.
 ```
 dependencies {
   ...
-  implementation 'com.realwear:UXLibrary:v1.3.1.412'
+  implementation 'com.realwear:UXLibrary:v1.5.0.493'
 }
 ```
 
@@ -33,19 +33,22 @@ dependencies {
 ```
 dependencies {
   ...
-  implementation 'com.realwear:UXLibrary:v1.3.1.412'
+  implementation 'com.realwear:UXLibrary:v1.5.0.493'
   implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }
 ```
 
 # UX Library Components
 
-The RealWear UX Library comprises of 7 main components:
+The RealWear UX Library comprises of 8 main components:
 
+* Toggle Button
 * Command Button
 * Styled Text View
 * Level Control
 * Horizontal Selector
+  - Fragment
+  - Activity
 * More Options
 * Radio Group
 * Command Bar
