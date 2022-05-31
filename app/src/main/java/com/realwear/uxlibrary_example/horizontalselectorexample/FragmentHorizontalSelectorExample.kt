@@ -93,7 +93,9 @@ class CustomDialogFragment : DialogFragment() {
         )
         val view = binding.root
 
-        binding.horizontalSelector.setAdapter(ExampleAdapter(weakContext.get()!!))
+        val adapter = ExampleAdapter(weakContext.get()!!)
+        binding.horizontalSelector.setAdapter(adapter)
+        adapter.updateArray(DataSource.arr) // No ViewModel - no bug
 
         /**
          * Method demonstrating how to get the index of the focused item.
