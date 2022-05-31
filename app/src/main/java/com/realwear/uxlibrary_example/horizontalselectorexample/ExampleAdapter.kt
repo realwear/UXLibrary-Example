@@ -44,20 +44,7 @@ class ExampleAdapter(context: Context) :
     HorizontalSelectorAdapter<ExampleViewHolder>(context) {
     private val weakContext: WeakReference<Context> = WeakReference(context)
     private val localTag = ExampleAdapter::class.java.simpleName
-
-    private val arr = arrayOf(
-        TestColor.Black,
-        TestColor.Brown,
-        TestColor.Red,
-        TestColor.Orange,
-        TestColor.Yellow,
-        TestColor.Green,
-        TestColor.Cyan,
-        TestColor.Blue,
-        TestColor.Violet,
-        TestColor.Gray,
-        TestColor.White
-    )
+    private var arr: Array<TestColor> = emptyArray()
 
     override fun onCreateViewHolder(parent: ViewGroup): ExampleViewHolder {
         return ExampleViewHolder(
@@ -104,6 +91,13 @@ class ExampleAdapter(context: Context) :
             1 -> ColorLevelFragment(arr[position].name)
             else -> null
         }
+    }
+
+    fun updateArray(array: Array<TestColor>) {
+        arr = array
+
+        // FIXME: When adapter is updated from LiveData items sometimes are not fully inflated
+        notifyDataSetChanged()
     }
 }
 

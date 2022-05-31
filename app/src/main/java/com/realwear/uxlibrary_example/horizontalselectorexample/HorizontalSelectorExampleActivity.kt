@@ -10,6 +10,7 @@ package com.realwear.uxlibrary_example.horizontalselectorexample
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.realwear.uxlibrary_example.R
 import com.realwear.uxlibrary_example.databinding.ActivityHorizontalSelectorBinding
@@ -19,6 +20,10 @@ import com.realwear.uxlibrary_example.databinding.ActivityHorizontalSelectorBind
  */
 class HorizontalSelectorExampleActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHorizontalSelectorBinding
+
+    private val viewModel by viewModels<HorizontalSelectorExampleViewModel>()
+    private val adapter = ExampleAdapter(this)
+
     private var centerBorderVisibility = View.VISIBLE
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +31,11 @@ class HorizontalSelectorExampleActivity : AppCompatActivity() {
         binding = ActivityHorizontalSelectorBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.horizontalSelector.setAdapter(ExampleAdapter(this))
+        binding.horizontalSelector.setAdapter(adapter)
+        viewModel.getArray().observe(this) {
+            // FIXME: ViewModel observing causes bug with items
+            adapter.updateArray(it)
+        }
     }
 
     /**
